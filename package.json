@@ -1,0 +1,17 @@
+{
+  "name": "dnd_archive",
+  "version": "1.0.0",
+  "description": "Archiv für unsere DnD Sessions",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
