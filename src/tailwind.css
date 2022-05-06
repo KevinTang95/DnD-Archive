@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Eigene Kklasse Beispiel:
+.ml-grd-cell{
+@apply bg-red-500 500 text-xl text-white text-center p-3;
+ 
+kann ich dann hier mein css reinschreiben? I guess
+
+}
+*/
+
+@layer components {
+  .text_1 {
+    @apply text-slate-200 font-crete-round;
+  }
+
+  /* position: fixed, top:0, left:0, height: 100%, width: 240px; padding: 6xx 14px */
+  .sidebar {
+    @apply w-60 h-full shadow-md bg-slate-600 fixed top-0 left-0 px-3.5 py-1.5;
+  }
+
+  /* display:flex, hegiht:50px, width:100%, align-item: center */
+  .logo_content .logo {
+    @apply text-slate-200 flex h-12 w-full items-center;
+  }
+  /* font-size:28px; margin-right: 5px */
+  .logo_content
+  .logo
+  i {
+    @apply text-2xl text-slate-200 mr-1;
+  }
+  /* font-size:20px, font-weight:400 */
+  .logo_content
+  .logo
+  .logo_name {
+    @apply text-xl font-normal;
+  }
+  /* postion:absolute, left:90% top:6 px fonts-size:20px; height: 50px; width:50px; text-align:center; line-height:50px; tansform:translateX(-50%) */
+  #btn {
+    @apply text-slate-200 absolute left-3/4 top-1.5 text-xl h-12 w-12 items-center leading-10 translate-x-2/4;
+  }
+  /*margin-top: 20px  */
+ .sidebar ul {
+    @apply mt-2.5;
+  }
+
+  /* position :relative; height: 50px; width:100%; margin:0 5px; line-height:50px;  list-style:none; */
+  .sidebar ul li {
+    @apply relative h-12 w-full mx-1 my-0 list-none leading-10 ;
+  }
+/*  postion:absolute; height:35px; width:122px; left:122px;  top:50%, transform: translateY(-50%); border-radius:6 px; background-color: #fff; line-height:35px; text-align:center box-shadow 0 5px 10px rgba(0, 0 ,0,0.2)*/
+  /*Ist dafür, da, wenn es gehovert wird, dass dann dashboard weiter dinge Zeigt  */
+.sidebar ul li .tooltip{
+    @apply absolute h-9 w-32 left-32 top-2/4 -translate-y-2 rounded-md bg-slate-200 leading-9 text-center shadow-tool
+  }
+  /* color: ; disyplay:flex; align-item: center text-decoration:none transition: all 0.4s ease*/
+
+  /* TODO: Morgern weiter */
+  .sidebar ul li:hover .tooltip{
+    @apply 
+  }
+
+  .sidebar ul li input{
+    @apply absolute h-full w-full left-0 top-0 rounded-xl outline-none border-none bg-slate-500 pl-12 text-lg text-slate-200
+  }
+
+  .sidebar ul li .fa-magnifying-glass{
+    @apply absolute z-10 text-2xl
+  }
+
+
+/* color:#fff; display:fkex, align-items:center; text-decoration:none; transition: all 0.4s ease; border-radius:12px; */
+  .sidebar ul li a {
+    @apply text-slate-200 flex items-center no-underline transition-all duration-75 ease-in rounded-xl;
+  }
+
+  .sidebar ul li a:hover {
+    @apply bg-slate-700  text-slate-500;
+  }
+
+  /* height: 50px, min-width:50px; border-radius:12px; line-height: 50px; */
+  .sidebar ul li a i {
+    @apply h-10 min-w-[50px] rounded-xl leading-10 text-center;
+  }
+/* position:absolkute, height: 100%; width: cacl(100%-240px); left:240px */
+  .home_content{
+    @apply absolute h-full w-[calc(100%-240px)] left-[240px]
+  }
+/* font-size:48px font-weight: 600 font-Family:crete-round; magrin-top12px; */
+  .home_content .text{
+    @apply text-slate-200 font-crete-round text-5xl font-semibold mt-3
+  }
+}

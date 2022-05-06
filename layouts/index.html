@@ -1,26 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap" rel="stylesheet"> 
-    <link href="css/styles.css" rel="stylesheet" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google apis -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Font Awesome Icon /BoxIcon -->
+    <script
+      src="https://kit.fontawesome.com/7ffce69cbf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> -->
     <title>DnD</title>
-</head>
-<body>
-  
-       
-   
-        <div class="container">
-            <video id=fire-bg src="videos/fire-bg.mp4" autoplay loop muted></video>
-            <h1 id="DnD" class="text-3xl font-bold underline">Dungeon and Dragon</h1>
+  </head>
 
+  <body class="relative bg-slate-500 min-h:100vh w:100% overflow-hidden">
 
+    
+    <div class="sidebar">
+      <div class="logo_content">
+        <div class="logo">
+          <i class="fa-solid fa-dice-d20 "></i>
+          <!-- Lieber hier oder eher unter dem Logo -->
+          <div class="logo_name text_1">Name von unser DnD</div>
         </div>
+        <i class="fa-solid fa-bars " id="btn"></i>
+      </div>
+      <ul class="nav_list">
+        <li>
+          <!-- Das wird noch überarbeitet, fucking Icon will nicht funktionieren von Font Awesome. Sollte grid icon sein
+            + link ergänzen was es machen sollte TODO: href ergänzen -->
+          <a href="#">
+            <i class="fa-solid fa-magnifying-glass "></i>
+            <input class="" type="text" placeholder="Suche..." />
+          </a>
+          <span class="tooltip"></span>
+        </li>
+        <!--TODO: href ergänzen   -->
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-border-all "></i>
+            <span class="links_name text_1">Dashboard</span>
+          </a>
+          <span class="tooltip"></span>
+        </li>
+        <!--TODO: href ergänzen , colappse für haupt und nebenchar +Monster  -->
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-border-all"></i>
+            <span class="links_name text_1">Charakter</span>
+          </a>
+          <span class="tooltip"></span>
+        </li>
+        <!-- TODO: Unterabenteuer -->
+        <li>
+            <a href="#">
+              <i class="fa-solid fa-border-all"></i>
+              <span class="links_name text_1">Abenteuer</span>
+            </a>
+            <span class="tooltip"></span>
+          </li>
 
-  
-</body>
+          <li>
+            <a href="#">
+                <!-- Wieso gibt es das hier auch nicht -->
+                <i class="fa-solid fa-flask"></i>
+                
+              <span class="links_name text_1">Item</span>
+            </a>
+            <span class="tooltip"></span>
+          </li>
+          <!-- TODO: Terminkalender integrieren -> via react? -->
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-border-all "></i>
+              <span class="links_name text_1">DnD Kalender</span>
+            </a>
+            <span class="tooltip"></span>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-border-all "></i>
+              <span class="links_name text_1">Video Highlights</span>
+            </a>
+            <span class="tooltip"></span>
+          </li>
+      </ul>
+    </div>
+
+    <div class="home_content">
+     <!--  <h1 class="text-6xl font-crete-round text-slate-100 underline">
+        Dungeon and Dragon
+      </h1> -->
+
+      <div class="text">Dungeon and Dragons</div>
+    </div>
+  </body>
 </html>
